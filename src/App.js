@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Body from './components/Body';
 
 function App() {
   return (
-    <p className='text-3xl text-green-700'>Hello from netflix-gpt</p>
+    <Body />
   );
 }
 
