@@ -25,18 +25,6 @@ const Body = () => {
     },
   ]);
 
-  // handling all the dispatch functionalities from the root of the application
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user!==null) {
-        const { uid, email, displayName } = user;
-        dispatch(addUser({ uid: uid, email: email, displayName: displayName }));
-      } else {
-        dispatch(removeUser());
-      }
-    });
-  }, []);
-
   return (
     <div>
       <RouterProvider router={appRouter} />
