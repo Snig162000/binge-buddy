@@ -29,6 +29,12 @@
 - Update score with trailer video data
 - Embedded the youtube video and make it autoplay and mute
 - Tailwind Classes to make Main container look awesome
+- Build the secondary container
+- Build movie list
+- Build movie card
+- TMDB Image CDN URL
+- Made the browser page amazing with tailwind css
+- usePopularMovies custom hook
 
 # Features
 
