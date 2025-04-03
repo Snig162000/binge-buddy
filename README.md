@@ -1,4 +1,4 @@
-# Netflix GPT
+# BingeBuddy
 
 - Create React App
 - Configured Tailwind CSS
@@ -60,6 +60,6 @@
     - Title & Description
     - Movie Suggestions
       - Movie Lists + N
-- NetflixGPT
+- BingeBuddy
   - Search bar
   - Movie Suggestions

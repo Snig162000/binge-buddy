@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { addUser, removeUser } from "../utils/userSlice";
 import {
-  NETFLIX_LOGO,
   SIGNED_IN_USER,
   SUPPORTED_LANG,
 } from "../utils/constants";
@@ -54,8 +53,8 @@ const Header = () => {
     dispatch(toggleGptSearchValue());
   };
   return (
-    <div className="px-16 pt-2 absolute z-10 bg-gradient-to-b from-black w-full flex flex-col md:flex-row justify-between ">
-      <img className="w-40 mx-auto md:mx-0" src={NETFLIX_LOGO} alt="netflix-logo" />
+    <div className="px-16 pt-2 z-10 bg-gradient-to-t from-black to-gray-900 w-full flex flex-col md:flex-row justify-between ">
+      <img className="w-[40%] mx-auto md:w-[10%] md:h-[2%] md:p-2 md:mx-0" src ="/images/Binge_Buddy_Logo.png" alt="binge-buddy-logo" />
       {user && (
         <div className="flex p-2 mx-auto md:mx-0">
           {showGPTSearch && (

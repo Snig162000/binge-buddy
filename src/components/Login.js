@@ -82,16 +82,16 @@ const Login = () => {
     //Sign In/ Sign up
   };
   return (
-    <div>
+    <div className="bg-gradient-to-b from-black to-gray-900 h-screen">
       <Header />
-      <div className="absolute">
+      {/* <div className="absolute">
         <img
           className="h-screen object-cover"
           src={BG_URL}
           alt="login-bg"
         />
-      </div>
-      <div className="bg-black p-14 absolute w-full md:w-4/12 my-28 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+      </div> */}
+      <div className="bg-gray-800 p-14 w-full md:w-4/12 my-20 mx-auto right-0 left-0 text-white rounded-lg">
         <form onClick={(e) => e.preventDefault()}>
           <h1 className="font-bold text-3xl py-4">
             {isSignIn ? "Sign In" : "Sign Up"}
@@ -99,18 +99,18 @@ const Login = () => {
           {!isSignIn && (
             <input
               ref={name}
-              className="my-2 p-3 w-full bg-gray-800"
+              className="my-2 p-3 w-full bg-gray-800 border-2"
               placeholder="Full Name"
             />
           )}
           <input
             ref={emailInfo}
-            className="my-2 p-3 w-full bg-gray-800"
+            className="my-2 p-3 w-full bg-gray-800 border-2"
             placeholder="Email Address"
           />
           <input
             ref={passwordInfo}
-            className="my-2 p-3 w-full bg-gray-800"
+            className="my-2 p-3 w-full bg-gray-800 border-2"
             type="password"
             placeholder="Password"
           />
@@ -123,7 +123,7 @@ const Login = () => {
           </button>
           <p onClick={signInToggle} className="cursor-pointer">
             {isSignIn
-              ? "New to Netflix? Sign Up Now"
+              ? "New to BingeBuddy? Sign Up Now"
               : "Already registered. Sign In Now"}
           </p>
         </form>
