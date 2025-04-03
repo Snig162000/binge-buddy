@@ -86,11 +86,12 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
+          className="h-screen object-cover"
           src={BG_URL}
           alt="login-bg"
         />
       </div>
-      <div className="bg-black p-14 absolute w-4/12 my-28 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+      <div className="bg-black p-14 absolute w-full md:w-4/12 my-28 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <form onClick={(e) => e.preventDefault()}>
           <h1 className="font-bold text-3xl py-4">
             {isSignIn ? "Sign In" : "Sign Up"}

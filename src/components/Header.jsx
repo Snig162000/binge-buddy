@@ -54,10 +54,10 @@ const Header = () => {
     dispatch(toggleGptSearchValue());
   };
   return (
-    <div className="px-16 pt-2 absolute z-10 bg-gradient-to-b from-black w-full flex justify-between">
-      <img className="w-40" src={NETFLIX_LOGO} alt="netflix-logo" />
+    <div className="px-16 pt-2 absolute z-10 bg-gradient-to-b from-black w-full flex flex-col md:flex-row justify-between ">
+      <img className="w-40 mx-auto md:mx-0" src={NETFLIX_LOGO} alt="netflix-logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 mx-auto md:mx-0">
           {showGPTSearch && (
             <select
               className="p-2 bg-gray-900 text-white m-2"
