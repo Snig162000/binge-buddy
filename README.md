@@ -62,5 +62,5 @@ BingeBuddy is your one-stop app for discovering movies, watching trailers, and e
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/bingebuddy.git
+   git clone https://github.com/Snig162000/binge-buddy.git
    cd bingebuddy
