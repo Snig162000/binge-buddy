@@ -64,3 +64,16 @@ BingeBuddy is your one-stop app for discovering movies, watching trailers, and e
    ```bash
    git clone https://github.com/Snig162000/binge-buddy.git
    cd bingebuddy
+2. **Install dependencies**
+   ```bash
+   npm install
+3. **Add your .env file**
+   Create a .env file in the root of your project and add the following:
+   ```bash
+   REACT_APP_FIREBASE_API_KEY=your_key_here
+   REACT_APP_TRAKD_TOKEN=your_token_here
+   REACT_APP_GENAI_API_KEY=your_api_key_here
+4. **Run the app**
+   ```bash
+   npm start
+
