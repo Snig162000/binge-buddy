@@ -1,65 +1,66 @@
-# BingeBuddy
+# 🎬 BingeBuddy
 
-- Create React App
-- Configured Tailwind CSS
-- Header
-- Routing of app
-- Login Form
-- Sign up Form
-- Form Validation
-- useRef Hook
-- Firebase Setup
-- Deploying our app to production
-- Create signup user account in firebase
-- Implement Sign In user api
-- created redux store with userSlice
-- Implemented sign out
-- update Profile
-- Bug fix: sign up user displayName update
-- Bug fix: if the user is not logged in, redirect /browse to login page and vice versa
-- Unsubscribed to the onAuthStateChanged callback
-- Add hardcoded values to the constants file
-- Register Trakd API & create an app & get access token
-- Get Data from Trakd now playing movies list API
-- Custom Hook for Now Playing movies
-- Create movieSlice
-- Update store with movies slice
-- Planning for mainContainer & secondary Container
-- Fetch data for trailer video using youtube search API
-- Update store with trailer video data
-- Embedded the youtube video and make it autoplay and mute
-- Tailwind Classes to make Main container look awesome
-- Build the secondary container
-- Build movie list
-- Build movie card
-- Use OMDB API for fetching the posters
-- Made the browser page amazing with tailwind css
-- usePopularMovies custom hook
-- GPT search page
-- GPT search bar
-- (Bonus) Multi-language feature in our app
-- Get google's Gen AI API key
-- GPT Search API call
-- fetched gptMovieSuggestions from OMDB
-- created GPTSlice added data
-- reused Movie List component to make movie search container
-- Memoization
-- Adding .env file
-- Adding .env file to gitignore
-- Made our site responsive
+BingeBuddy is your one-stop app for discovering movies, watching trailers, and exploring smart recommendations powered by AI. Built with React, Firebase, Tailwind CSS, Redux, and integrated with Trakd, OMDB, and Google's GenAI — BingeBuddy is packed with features that make your movie nights effortless.
 
-# Features
+---
 
-- Login/Signup page
-  - Sign In/Up form
-  - redirect to browse page
-- Browse (after authentication)
-  - Header
-  - Main Movie
-    - Trailer in backgrounf
-    - Title & Description
-    - Movie Suggestions
-      - Movie Lists + N
-- BingeBuddy
-  - Search bar
-  - Movie Suggestions
+## 🚀 Live Demo
+
+👉 [Check it out here](#) *(add your deployed app link)*
+
+---
+
+## 📸 Preview
+
+*(Optional: Add screenshots or screen recording of your app here)*
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Tailwind CSS, Redux Toolkit  
+- **Backend/Auth**: Firebase Auth  
+- **APIs**: Trakd API, OMDB API, YouTube Search API, Google GenAI  
+- **State Management**: Redux  
+- **Deployment**: Firebase Hosting / Vercel / Netlify *(update as needed)*
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+- Login/Signup with Firebase Auth
+- Form validation with `useRef`
+- Redirect handling for protected routes
+- User profile updates
+- Secure logout & auth state management
+
+### 🎥 Browse Page (Post-Login)
+- Hero section with autoplay trailer (YouTube)
+- Movie title, description, and category-based listings
+- Dynamic movie cards using OMDB posters
+- Responsive UI with Tailwind CSS
+
+### 🧠 GPT Search (AI-powered!)
+- Search bar with natural language input
+- Movie suggestions from GenAI + OMDB
+- Multi-language support
+- Optimized with memoization and reusable components
+
+---
+
+## 📦 Folder Structure Highlights
+
+- `/components` – Reusable UI elements  
+- `/hooks` – Custom hooks like `useNowPlaying`, `usePopularMovies`  
+- `/store` – Redux slices (`userSlice`, `movieSlice`, `gptSlice`)  
+- `/utils/constants.js` – API keys, base URLs, and static data
+
+---
+
+## 🔧 Setup & Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/bingebuddy.git
+   cd bingebuddy
