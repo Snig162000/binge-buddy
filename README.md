@@ -52,7 +52,7 @@ BingeBuddy is your one-stop app for discovering movies, watching trailers, and e
 ## 📦 Folder Structure Highlights
 
 - `/components` – Reusable UI elements  
-- `/hooks` – Custom hooks like `useNowPlaying`, `usePopularMovies`  
+- `/hooks` – Custom hooks like `useMostWatchedMovies`, `usePopularMovies`  
 - `/store` – Redux slices (`userSlice`, `movieSlice`, `gptSlice`)  
 - `/utils/constants.js` – API keys, base URLs, and static data
 
